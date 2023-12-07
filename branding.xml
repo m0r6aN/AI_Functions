@@ -1,0 +1,391 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Theme">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Assignments">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Assignment">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="InstitutionDomainId"/>
+                                        <xs:element type="xs:string" name="InstitutionName"/>
+                                        <xs:element type="xs:boolean" name="IsDefault"/>
+                                        <xs:element type="xs:integer" name="RoutingTransit"/>
+                                        <xs:element type="xs:string" name="ThemeDisplayId"/>
+                                        <xs:element type="xs:string" name="ThemeId"/>
+                                        <xs:element type="xs:string" name="ThemeName"/>
+                                        <xs:element type="xs:integer" name="ThemeNumber"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element type="xs:string" name="DatabaseVersion">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension></xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element type="xs:string" name="DateLastModified">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension></xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element type="xs:string" name="DateLastPublished">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension></xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element type="xs:string" name="DirectoryName"/>
+                <xs:element name="Disclaimers">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="Disclaimer">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="Content"/>
+                                        <xs:element type="xs:string" name="Handling"/>
+                                        <xs:element type="xs:string" name="Type"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element type="xs:string" name="DisplayId"/>
+                <xs:element type="xs:string" name="DomainID"/>
+                <xs:element type="xs:string" name="ID"/>
+                <xs:element name="Institution">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="DisplayId"/>
+                            <xs:element type="xs:string" name="DomainId"/>
+                            <xs:element type="xs:string" name="Name"/>
+                            <xs:element name="RoutingTransits">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:integer" name="string"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Objects">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="ThemeObject">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element type="xs:string" name="Type"/>
+                                        <xs:element type="xs:string" name="Value"/>
+                                        <xs:element type="xs:string" name="Filename"/>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element type="xs:string" name="Name"/>
+                <xs:element name="Settings">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="AdHomePageMaxHeight">
+                                <xs:complexType>
+                                    <xs:sequence></xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="AdHomePageMaxWidth">
+                                <xs:complexType>
+                                    <xs:sequence></xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="BannerAdsDisplayInterval">
+                                <xs:complexType>
+                                    <xs:sequence></xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:string" name="CustomFooterURL1">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension></xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:boolean" name="DisplayTimeLastAccessed"/>
+                            <xs:element type="xs:string" name="EmailFromAddress">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension></xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:string" name="EmailFromName"/>
+                            <xs:element type="xs:boolean" name="EqualHousingDisclaimer"/>
+                            <xs:element name="ESignEffectiveDate">
+                                <xs:complexType>
+                                    <xs:sequence></xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:boolean" name="HideBillPayment"/>
+                            <xs:element type="xs:boolean" name="HideCustomTransferDescription"/>
+                            <xs:element type="xs:boolean" name="HideMicronotes"/>
+                            <xs:element type="xs:boolean" name="HideSavvyMoneyCreditSense"/>
+                            <xs:element type="xs:boolean" name="HideSecureNowSecurityChallenge"/>
+                            <xs:element type="xs:string" name="InsuranceDisclaimer"/>
+                            <xs:element type="xs:string" name="LogOutLinkURL">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension></xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:string" name="MobileAppBannerAndroidPhoneId"/>
+                            <xs:element type="xs:integer" name="MobileAppBannerApplePhoneId"/>
+                            <xs:element type="xs:boolean" name="MobileHideMobileBanking"/>
+                            <xs:element type="xs:string" name="NavUtilityURL1">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension></xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:string" name="NavUtilityURL2">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension></xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="NextBannerChannelID">
+                                <xs:complexType>
+                                    <xs:sequence></xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="NextBannerDisplayIntervalInSec">
+                                <xs:complexType>
+                                    <xs:sequence></xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="NextHomePageChannelID">
+                                <xs:complexType>
+                                    <xs:sequence></xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="NextHomePageDisplayIntervalInSec">
+                                <xs:complexType>
+                                    <xs:sequence></xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:boolean" name="OfferEnrollmentWithEmailPasscode"/>
+                            <xs:element type="xs:boolean" name="OfferESign"/>
+                            <xs:element type="xs:boolean" name="RevationDisplayChatInPopup"/>
+                            <xs:element type="xs:string" name="TermsAndConditionsEffectiveDate">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension></xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:boolean" name="ShowZelle"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Styles">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="AccountCreateBackgroundColor"/>
+                            <xs:element type="xs:string" name="AccountCreateBackgroundHoverColor"/>
+                            <xs:element type="xs:string" name="AccountCreateBorderColor"/>
+                            <xs:element type="xs:string" name="AccountCreateBorderHoverColor"/>
+                            <xs:element type="xs:string" name="AccountCreateLinkColor"/>
+                            <xs:element type="xs:string" name="AccountCreateLinkHoverColor"/>
+                            <xs:element type="xs:string" name="BannerBackground"/>
+                            <xs:element type="xs:string" name="BannerHeight"/>
+                            <xs:element type="xs:string" name="BannerTextAlign"/>
+                            <xs:element type="xs:string" name="ButtonDefaultBackgroundColor"/>
+                            <xs:element type="xs:string" name="ButtonDefaultBackgroundHoverColor"/>
+                            <xs:element type="xs:string" name="ButtonDefaultBorderColor"/>
+                            <xs:element type="xs:string" name="ButtonDefaultBorderHoverColor"/>
+                            <xs:element type="xs:string" name="ButtonDefaultTextColor"/>
+                            <xs:element type="xs:string" name="ButtonDefaultTextHoverColor"/>
+                            <xs:element type="xs:string" name="ButtonPrimaryBackgroundColor"/>
+                            <xs:element type="xs:string" name="ButtonPrimaryBackgroundHoverColor"/>
+                            <xs:element type="xs:string" name="ButtonPrimaryBorderColor"/>
+                            <xs:element type="xs:string" name="ButtonPrimaryBorderHoverColor"/>
+                            <xs:element type="xs:string" name="ButtonPrimaryTextColor"/>
+                            <xs:element type="xs:string" name="ButtonPrimaryTextHoverColor"/>
+                            <xs:element type="xs:string" name="ContentBlockBackgroundColor"/>
+                            <xs:element type="xs:string" name="ContentBlockTextColor"/>
+                            <xs:element type="xs:string" name="CreditAmountTextColor"/>
+                            <xs:element type="xs:string" name="DebitAmountTextColor"/>
+                            <xs:element type="xs:string" name="FontFamily"/>
+                            <xs:element type="xs:string" name="FontSize"/>
+                            <xs:element type="xs:string" name="FooterBackgroundColor"/>
+                            <xs:element type="xs:string" name="FooterBorderColor"/>
+                            <xs:element type="xs:string" name="FooterLinkColor"/>
+                            <xs:element type="xs:string" name="FooterLinkHoverColor"/>
+                            <xs:element type="xs:string" name="FooterTextColor"/>
+                            <xs:element type="xs:string" name="LinkColor"/>
+                            <xs:element type="xs:string" name="LinkHoverColor"/>
+                            <xs:element type="xs:string" name="NavAccountActiveTabBackgroundColor"/>
+                            <xs:element type="xs:string" name="NavAccountActiveTabBorderColor"/>
+                            <xs:element type="xs:string" name="NavAccountActiveTabLinkColor"/>
+                            <xs:element type="xs:string" name="NavAccountBackgroundColor"/>
+                            <xs:element type="xs:string" name="NavAccountBackgroundHoverColor"/>
+                            <xs:element type="xs:string" name="NavAccountBorderColor"/>
+                            <xs:element type="xs:string" name="NavAccountBorderHoverColor"/>
+                            <xs:element type="xs:string" name="NavAccountLinkColor"/>
+                            <xs:element type="xs:string" name="NavAccountLinkHoverColor"/>
+                            <xs:element type="xs:string" name="NavPrimaryActiveTabBackgroundColor"/>
+                            <xs:element type="xs:string" name="NavPrimaryActiveTabLinkColor"/>
+                            <xs:element type="xs:string" name="NavPrimaryBackgroundColor"/>
+                            <xs:element type="xs:string" name="NavPrimaryBackgroundHoverColor"/>
+                            <xs:element type="xs:string" name="NavPrimaryLinkColor"/>
+                            <xs:element type="xs:string" name="NavPrimaryLinkHoverColor"/>
+                            <xs:element type="xs:string" name="NavPrimaryPositionBottom"/>
+                            <xs:element type="xs:string" name="NavPrimaryPositionLeft"/>
+                            <xs:element type="xs:string" name="NavPrimaryPositionRight"/>
+                            <xs:element type="xs:string" name="NavPrimaryPositionTop"/>
+                            <xs:element type="xs:string" name="NavUtilityBackgroundColor"/>
+                            <xs:element type="xs:string" name="NavUtilityBackgroundHoverColor"/>
+                            <xs:element type="xs:string" name="NavUtilityBadgeBackgroundColor"/>
+                            <xs:element type="xs:string" name="NavUtilityBadgeLinkColor"/>
+                            <xs:element type="xs:string" name="NavUtilityLinkColor"/>
+                            <xs:element type="xs:string" name="NavUtilityLinkHoverColor"/>
+                            <xs:element type="xs:string" name="NegativeBalanceTextColor"/>
+                            <xs:element type="xs:string" name="PageBackground"/>
+                            <xs:element type="xs:string" name="TableHeadBackground"/>
+                            <xs:element type="xs:string" name="TableHeadTextColor"/>
+                            <xs:element type="xs:string" name="TableRowSeparatorColor"/>
+                            <xs:element type="xs:string" name="TextColor"/>
+                            <xs:element type="xs:string" name="UnreadAlertColor"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Text">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="BannerAdsAltText1"/>
+                            <xs:element type="xs:string" name="BannerAdsAltText2"/>
+                            <xs:element type="xs:string" name="BannerAdsAltText3"/>
+                            <xs:element type="xs:string" name="BannerAdsAltText4"/>
+                            <xs:element type="xs:string" name="BannerAdsAltText5"/>
+                            <xs:element type="xs:string" name="BannerAdsAltText6"/>
+                            <xs:element type="xs:string" name="BannerAdsAltText7"/>
+                            <xs:element type="xs:string" name="BannerAdsAltText8"/>
+                            <xs:element type="xs:string" name="BannerAdsAltText9"/>
+                            <xs:element type="xs:string" name="BannerAdsAltText10"/>
+                            <xs:element type="xs:string" name="BeavercreekHomePageAlt"/>
+                            <xs:element type="xs:string" name="CustomFooterURLText1"/>
+                            <xs:element type="xs:string" name="CustomFooterURLText2"/>
+                            <xs:element type="xs:string" name="CustomFooterURLText3"/>
+                            <xs:element type="xs:string" name="CustomFooterURLText4"/>
+                            <xs:element type="xs:string" name="CustomFooterURLText5"/>
+                            <xs:element type="xs:string" name="CustomFooterURLText6"/>
+                            <xs:element type="xs:string" name="CustomFooterURLText7"/>
+                            <xs:element type="xs:string" name="CustomFooterURLText8"/>
+                            <xs:element type="xs:string" name="CustomFooterURLText9"/>
+                            <xs:element type="xs:string" name="CustomFooterURLText10"/>
+                            <xs:element type="xs:string" name="CustomTextExternalTransfer"/>
+                            <xs:element type="xs:string" name="DdlAccountNameSuffix"/>
+                            <xs:element type="xs:string" name="EmailChangeAddressBody"/>
+                            <xs:element type="xs:string" name="EmailChangeAddressSubject"/>
+                            <xs:element type="xs:string" name="EmailChangeEmailBody"/>
+                            <xs:element type="xs:string" name="EmailChangeEmailSubject"/>
+                            <xs:element type="xs:string" name="EmailChangeMFAChallengeBody"/>
+                            <xs:element type="xs:string" name="EmailChangeMFAChallengeSubject"/>
+                            <xs:element type="xs:string" name="EmailChangePasswordBody"/>
+                            <xs:element type="xs:string" name="EmailChangePasswordSubject"/>
+                            <xs:element type="xs:string" name="EmailChangePhoneBody"/>
+                            <xs:element type="xs:string" name="EmailChangePhoneSubject"/>
+                            <xs:element type="xs:string" name="EmailForgotPasswordSubject"/>
+                            <xs:element type="xs:string" name="EmailForgotPasswordBody">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension></xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:string" name="EmailMFAOneTimePasscodeBody"/>
+                            <xs:element type="xs:string" name="EmailMFAOneTimePasscodeSubject"/>
+                            <xs:element type="xs:string" name="FocusSectionHeaderText"/>
+                            <xs:element type="xs:string" name="HelpTextAccountListEdit"/>
+                            <xs:element type="xs:string" name="HelpTextBillPay"/>
+                            <xs:element type="xs:string" name="HelpTextChangePassword"/>
+                            <xs:element type="xs:string" name="HelpTextEnrollElectronicStatements"/>
+                            <xs:element type="xs:string" name="HelpTextEnrollmentOnboardAdvisor"/>
+                            <xs:element type="xs:string" name="HelpTextEstablishProfile"/>
+                            <xs:element type="xs:string" name="HelpTextEstablishUsername"/>
+                            <xs:element type="xs:string" name="HelpTextExportTransactions"/>
+                            <xs:element type="xs:string" name="HelpTextExternalTransfer"/>
+                            <xs:element type="xs:string" name="HelpTextExternalTransferEnroll"/>
+                            <xs:element type="xs:string" name="HelpTextForceChangeCredentials"/>
+                            <xs:element type="xs:string" name="HelpTextForceChangePassword"/>
+                            <xs:element type="xs:string" name="HelpTextForgotPassword"/>
+                            <xs:element type="xs:string" name="HelpTextForgotPasswordOnboardAdvisor"/>
+                            <xs:element type="xs:string" name="HelpTextMobilitiConfirmCurrentPassword"/>
+                            <xs:element type="xs:string" name="HelpTextLogin"/>
+                            <xs:element type="xs:string" name="HelpTextMFAChangeChallengeQuestions"/>
+                            <xs:element type="xs:string" name="HelpTextMFALoginChallenge"/>
+                            <xs:element type="xs:string" name="HelpTextMFASetupChallengeQuestions"/>
+                            <xs:element type="xs:string" name="HelpTextMobileBankingEnrollment"/>
+                            <xs:element type="xs:string" name="HelpTextProfileAddress"/>
+                            <xs:element type="xs:string" name="HelpTextProfileElectronicStatements"/>
+                            <xs:element type="xs:string" name="HelpTextProfileEmail"/>
+                            <xs:element type="xs:string" name="HelpTextProfilePhone"/>
+                            <xs:element type="xs:string" name="HelpTextProfileMobilePhone"/>
+                            <xs:element type="xs:string" name="HelpTextSetupPhoneNumbers"/>
+                            <xs:element type="xs:string" name="HelpTextStopPayList"/>
+                            <xs:element type="xs:string" name="HelpTextStopPaymentAdd"/>
+                            <xs:element type="xs:string" name="HelpTextTransfer">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension></xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element type="xs:string" name="LogoAltText"/>
+                            <xs:element type="xs:string" name="LogOutLinkText"/>
+                            <xs:element type="xs:string" name="MobileAppBannerTitle"/>
+                            <xs:element type="xs:string" name="NavPrimaryCheckFreeText"/>
+                            <xs:element type="xs:string" name="NavPrimaryURLText1"/>
+                            <xs:element type="xs:string" name="NavPrimaryURLText2"/>
+                            <xs:element type="xs:string" name="NavUtilityURLText1"/>
+                            <xs:element type="xs:string" name="NavUtilityURLText2"/>
+                            <xs:element type="xs:string" name="PendingEnrollmentConfirmationLinkText"/>
+                            <xs:element type="xs:string" name="PendingEnrollmentConfirmationText"/>
+                            <xs:element type="xs:string" name="TitlePrefix"/>
+                            <xs:element type="xs:string" name="TooltipEnrollmentPIN"/>
+                            <xs:element type="xs:string" name="TooltipMobileEnrollment"/>
+                            <xs:element type="xs:string" name="WelcomeMessage"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element type="xs:string" name="Version">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension></xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="Disclaimer">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:string" name="TermsAndConditionsContent"/>
+                            <xs:element type="xs:string" name="TermsAndConditionsContentType"/>
+                            <xs:element type="xs:string" name="TermsAndConditionsPDF"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
